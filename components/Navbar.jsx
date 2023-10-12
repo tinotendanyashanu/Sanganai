@@ -17,16 +17,14 @@ const Navbar = () => (
       <img
         src="/sanganai.svg"
         alt="search"
-        className="w-[50px] h-[80px] object-contain"
+        className="w-[60px] h-[90px] object-contain"
       />
       <h2 className="font-extrabold text-[34px] leading-[30.24px] text-white">
         Sanganai
       </h2>
-      <img
-        src="/menu.svg"
-        alt="menu"
-        className="w-[24px] h-[24px] object-contain"
-      />
+      <button className="bg-purple-700 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded-full transform transition-transform duration-300 ease-in-out hover:scale-110 focus:outline-none focus:ring focus:border-purple-900">
+        Get Started
+      </button>
     </div>
   </motion.nav>
 );
