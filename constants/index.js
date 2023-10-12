@@ -2,27 +2,32 @@ export const exploreWorlds = [
   {
     id: "world-1",
     imgUrl: "/planet-01.png",
-    title: "The Hogwarts",
+    title: "Entertainment Events",
   },
   {
     id: "world-2",
     imgUrl: "/planet-02.png",
-    title: "The Upside Down",
+    title: "Cooperate Events",
   },
   {
     id: "world-3",
     imgUrl: "/planet-03.png",
-    title: "Kadirojo Permai",
+    title: "Sports Events",
   },
   {
     id: "world-4",
     imgUrl: "/planet-04.png",
-    title: "Paradise Island",
+    title: "cultural/religious Events",
   },
   {
     id: "world-5",
     imgUrl: "/planet-05.png",
-    title: "Hawkins Labs",
+    title: "Educational Events",
+  },
+  {
+    id: "world-5",
+    imgUrl: "/planet-05.png",
+    title: "and many more",
   },
 ];
 
