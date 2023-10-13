@@ -1,33 +1,28 @@
 export const exploreWorlds = [
   {
     id: "world-1",
-    imgUrl: "/planet-01.png",
+    imgUrl: "/happy.jpg",
     title: "Entertainment Events",
   },
   {
     id: "world-2",
-    imgUrl: "/planet-02.png",
+    imgUrl: "/business.jpg",
     title: "Cooperate Events",
   },
   {
     id: "world-3",
-    imgUrl: "/planet-03.png",
+    imgUrl: "/sports.jpg",
     title: "Sports Events",
   },
   {
     id: "world-4",
-    imgUrl: "/planet-04.png",
-    title: "cultural/religious Events",
+    imgUrl: "/culture.jpg",
+    title: "Cultural/Religious Events",
   },
   {
     id: "world-5",
-    imgUrl: "/planet-05.png",
+    imgUrl: "/R.jpg",
     title: "Educational Events",
-  },
-  {
-    id: "world-5",
-    imgUrl: "/planet-05.png",
-    title: "and many more",
   },
 ];
 
@@ -41,22 +36,34 @@ export const startingFeatures = [
 
 export const newFeatures = [
   {
-    imgUrl: "/vrpano.svg",
-    title: "QR Code Generation",
+    imgUrl: "/qr.svg",
+    title: "Comprehensive Features",
     subtitle:
-      "Integrated with QR code generation system to create unique codes for each ticket, enhancing security and reducing the risk of counterfeit tickets.",
+      "Our system offers a range of advanced features, including location-based event listings, secure QR code technology, and data-driven insights, providing a holistic solution for event organizers and attendees.",
   },
   {
     imgUrl: "/headset.svg",
-    title: "Location-Based Event Listings",
+    title: "User-Friendly Interface:",
     subtitle:
-      "Designed to displays upcoming events based on the user's location, facilitating personalized event recommendations.",
+      "The intuitive interface ensures a seamless experience for both event organizers and attendees, making ticket selling and buying effortless.​",
   },
   {
     imgUrl: "/headset.svg",
-    title: "Sales Reporting: ",
+    title: "Superior Security: ",
     subtitle:
-      "generates comprehensive sales reports for event organizers, providing insights into ticket sales, revenue, and attendee statistics.",
+      "Our secure QR code technology reduces the risk of counterfeit tickets and ensures smooth entry validation at event venues, instilling confidence in organizers and attendees.​",
+  },
+  {
+    imgUrl: "/headset.svg",
+    title: "Personalized Recommendations:  ",
+    subtitle:
+      "The location-based event listings enhance event discoverability for attendees, leading to increased event attendance.​",
+  },
+  {
+    imgUrl: "/headset.svg",
+    title: "Data-Driven Decision Making:   ",
+    subtitle:
+      "The comprehensive sales reports and analytics empower event organizers​​",
   },
 ];
 
@@ -69,14 +76,14 @@ export const insights = [
       " Explore the evolution of events in the digital age. Learn how event organizers are successfully blending physical and virtual experiences to create engaging hybrid events. Discover the technologies shaping the future of event planning and how attendees can make the most of these dynamic gatherings.",
   },
   {
-    imgUrl: "/planet-07.png",
+    imgUrl: "/analytics.jpg",
     title:
       "Data-Driven Events: How Analytics is Revolutionizing Event Planning",
     subtitle:
       "Uncover the power of data in the events industry. Delve into the ways event organizers are leveraging analytics to understand attendee behavior, optimize event logistics, and enhance overall attendee satisfaction. Learn practical strategies for collecting and interpreting event data, leading to more informed decision-making.",
   },
   {
-    imgUrl: "/planet-08.png",
+    imgUrl: "/R.png",
     title:
       "The Art of Event Promotion: Strategies for Creating Buzz and Boosting Attendance",
     subtitle:

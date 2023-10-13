@@ -8,11 +8,38 @@ const EmailForm = ({ onFormSubmit }) => {
     setEmail(value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    try {
+      // Make a POST request to your backend API endpoint
+      const response = await fetch("http://localhost:3001/subscribe", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      // Handle the response from the backend if needed
+      if (response.ok) {
+        // Optionally, you can handle a successful response here
+        console.log("Email sent successfully!");
+
+        // Redirect to the home page
+        window.location.href = "./"; // Replace this URL with your home page URL
+      } else {
+        // Handle errors from the backend
+        console.error("Failed to send email");
+      }
+    } catch (error) {
+      // Handle network errors or other issues
+      console.error("Error sending email:", error);
+    }
+
+    // Call the provided onFormSubmit callback if needed
     onFormSubmit(email);
   };
-
   return (
     <motion.form
       onSubmit={handleSubmit}

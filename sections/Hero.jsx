@@ -5,7 +5,14 @@ import { motion } from "framer-motion";
 import styles from "../styles";
 import { slideIn, staggerContainer, textVariant } from "../utils/motion";
 
-const images = ["/cover.jpg", "/Home2.png", "/Home3.png"]; // Add paths to your images
+const images = [
+  "/cover3.jpg",
+  "/cover1.jpg",
+  "/Entertainment.jpg",
+  "/cover2.jpg",
+  "/cover.jpg",
+  "/Home.webp",
+]; // Add paths to your images
 
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -39,7 +46,7 @@ const Hero = () => {
           >
             <h1 className={styles.heroParagraph}>
               {" "}
-              Welcome to Sananganai: Where Every Ticket Connects a Story.
+              Welcome to Sanganai: Where Every Event Connects a Story.
             </h1>
           </motion.div>
         </div>
