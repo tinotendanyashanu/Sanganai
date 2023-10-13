@@ -15,18 +15,9 @@ const World = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <TypingText title="| People on the World" textStyles="text-center" />
+      <TypingText title="| Sanganai to the World" textStyles="text-center" />
       <TitleText
-        title={
-          <>
-            {" "}
-            Explore the diverse range of events hosted on our platform, from
-            local community gatherings to international conferences. Our
-            platform is your passport to a world of experiences. Discover events
-            from different cultures, languages, and traditions, all in one
-            place.
-          </>
-        }
+        title={<> Global Events, Diverse Experiences Await!</>}
         textStyles="text-center"
       />
 
