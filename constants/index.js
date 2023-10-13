@@ -48,19 +48,19 @@ export const newFeatures = [
       "The intuitive interface ensures a seamless experience for both event organizers and attendees, making ticket selling and buying effortless.​",
   },
   {
-    imgUrl: "/headset.svg",
+    imgUrl: "/security.png",
     title: "Superior Security: ",
     subtitle:
       "Our secure QR code technology reduces the risk of counterfeit tickets and ensures smooth entry validation at event venues, instilling confidence in organizers and attendees.​",
   },
   {
-    imgUrl: "/headset.svg",
+    imgUrl: "/search.svg",
     title: "Personalized Recommendations:  ",
     subtitle:
       "The location-based event listings enhance event discoverability for attendees, leading to increased event attendance.​",
   },
   {
-    imgUrl: "/headset.svg",
+    imgUrl: "/vrpano.svg",
     title: "Data-Driven Decision Making:   ",
     subtitle:
       "The comprehensive sales reports and analytics empower event organizers​​",
