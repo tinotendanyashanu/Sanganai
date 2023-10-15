@@ -12,7 +12,6 @@ const EmailForm = ({ onFormSubmit }) => {
     e.preventDefault();
 
     try {
-      // Make a POST request to your backend API endpoint
       const response = await fetch(
         "https://sanganai-091f66f33c16.herokuapp.com/subscribe",
         {
@@ -24,36 +23,30 @@ const EmailForm = ({ onFormSubmit }) => {
         }
       );
 
-      // Handle the response from the backend if needed
       if (response.ok) {
-        // Optionally, you can handle a successful response here
         console.log("Email sent successfully!");
-
-        // Redirect to the home page
-        window.location.href = "./"; // Replace this URL with your home page URL
+        window.location.href = "./";
       } else {
-        // Handle errors from the backend
         console.error("Failed to send email");
       }
     } catch (error) {
-      // Handle network errors or other issues
       console.error("Error sending email:", error);
     }
 
-    // Call the provided onFormSubmit callback if needed
     onFormSubmit(email);
   };
+
   return (
     <motion.form
       onSubmit={handleSubmit}
-      className="flex flex-col sm:flex-row items-center justify-center mb-6 mx-4 sm:mx-0"
+      className="flex flex-col sm:flex-row items-center justify-center mb-6 mx-4 sm:mx-0 w-full sm:w-auto"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
       <input
         type="email"
-        className="py-4 px-6 sm:px-8 border rounded-lg mb-2 sm:mb-0 w-full sm:w-auto focus:outline-none"
+        className="py-4 px-6 sm:px-8 border rounded-lg mb-2 sm:mb-0 w-full sm:w-auto focus:outline-none resize-none"
         placeholder="Enter your email"
         value={email}
         onChange={handleEmailChange}
@@ -61,7 +54,7 @@ const EmailForm = ({ onFormSubmit }) => {
 
       <motion.button
         type="submit"
-        className="bg-red-500 hover:bg-red-700 text-white py-2 px-6 sm:px-8 rounded focus:outline-none transition duration-300"
+        className="bg-red-500 hover:bg-red-700 text-white py-2 px-6 sm:px-8 rounded focus:outline-none transition duration-300 resize-none"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
