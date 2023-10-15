@@ -24,7 +24,7 @@ const Explore = () => {
         <TitleText
           title={
             <>
-              Explore <br className="md:block hidden" /> Sananganai
+              Explore <br className="md:block hidden" /> Sanganai
             </>
           }
           textStyles="text-center"

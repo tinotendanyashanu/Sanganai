@@ -7,7 +7,7 @@ export const exploreWorlds = [
   {
     id: "world-2",
     imgUrl: "/business.jpg",
-    title: "Cooperate Events",
+    title: "Corporate Events",
   },
   {
     id: "world-3",

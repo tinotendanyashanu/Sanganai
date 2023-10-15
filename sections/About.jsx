@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { TypingText } from "../components";
-
+import Link from "next/link";
 import styles from "../styles";
 import { fadeIn, staggerContainer } from "../utils/motion";
 
@@ -16,7 +16,7 @@ const About = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText title="| About Sananganai" textStyles="text-center" />
+      <TypingText title="| About Sanganai" textStyles="text-center" />
 
       <motion.p
         variants={fadeIn("up", "tween", 0.2, 1)}
@@ -35,13 +35,14 @@ const About = () => (
         <span className="font-extrabold text-white"> Discover</span> the future
         of event ticketing with Sanganai.
       </motion.p>
-
-      <motion.img
-        variants={fadeIn("up", "tween", 0.3, 1)}
-        src="/arrow-down.svg"
-        alt="arrow down"
-        className="w-[18px] h-[28px] object-contain mt-[28px]"
-      />
+      <Link href="#explore">
+        <motion.img
+          variants={fadeIn("up", "tween", 0.3, 1)}
+          src="/arrow-down.svg"
+          alt="arrow down"
+          className="w-[18px] h-[28px] object-contain mt-[28px]"
+        />
+      </Link>
     </motion.div>
   </section>
 );
