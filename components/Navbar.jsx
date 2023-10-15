@@ -26,9 +26,9 @@ const Navbar = () => {
           className="w-[60px] h-[90px] object-contain left-20"
         />
         <div className="absolute w-[20%] inset-9 gradient-01" />
-        <h2 className="font-extrabold text-[34px] leading-[30.24px] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-orange-500 to-yellow-500 via-pink-500">
+        {/* <h2 className="font-extrabold text-[34px] leading-[30.24px] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-orange-500 to-yellow-500 via-pink-500">
           Sanganai
-        </h2>
+        </h2> */}
 
         <div className=" flex items-center justify-center gap-x-6 lg:justify-start">
           <a
