@@ -46,7 +46,7 @@ const EmailForm = ({ onFormSubmit }) => {
     >
       <input
         type="email"
-        className="py-4 px-6 sm:px-8 border rounded-lg mb-2 sm:mb-0 w-full sm:w-auto focus:outline-none resize-none"
+        className="py-4 px-6 sm:px-8 border rounded-lg mb-2 sm:mb-0 w-full sm:w-auto focus:outline-none resize-none cursor-pointer"
         placeholder="Enter your email"
         value={email}
         onChange={handleEmailChange}
@@ -54,7 +54,7 @@ const EmailForm = ({ onFormSubmit }) => {
 
       <motion.button
         type="submit"
-        className="bg-red-500 hover:bg-red-700 text-white py-2 px-6 sm:px-8 rounded focus:outline-none transition duration-300 resize-none"
+        className="bg-red-500 hover:bg-red-700 text-white py-2 px-6 sm:px-8 rounded focus:outline-none transition duration-300 resize-none cursor-pointer"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
