@@ -23,6 +23,22 @@ const MyApp = ({ Component, pageProps }) => (
         rel="stylesheet"
         href="https://stijndv.com/fonts/Eudoxus-Sans.css"
       />
+      {/* Google Tag Manager */}
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-32TQVSSWBH"
+      ></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-32TQVSSWBH');
+              `,
+        }}
+      />
+      {/* End Google Tag Manager */}
 
       {/* Additional CSS or JavaScript files can be added here */}
     </Head>
