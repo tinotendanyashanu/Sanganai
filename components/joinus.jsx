@@ -55,7 +55,7 @@ const EmailForm = ({ onFormSubmit }) => {
         onChange={handleEmailChange}
         className="w-full p-2 border rounded-sm focus:outline-none focus:ring focus:border-indigo-600 text-black"
       />
-
+      <div className="absolute w-[10%] inset-9 gradient-01" />
       <button
         type="submit"
         className="w-full bg-red-500 text-white p-2 rounded-md hover:bg-red-600 focus:outline-none focus:ring focus:border-red-700"
@@ -89,6 +89,7 @@ const JoinUs = () => {
           We respect your privacy. Unsubscribe at any time.
         </p>
       </div>
+      <div className="absolute w-[10%] inset-0 gradient-03" />
     </div>
   );
 };
