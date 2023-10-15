@@ -14,6 +14,8 @@ const MyApp = ({ Component, pageProps }) => (
         name="keywords"
         content="Sanganai, event tickets, ticketing system, buy tickets, sell tickets, event management"
       />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
       <meta name="author" content="DigitalGeeks" />
       <link rel="icon" href="/favicon.ico" />
       <link rel="preconnect" href="https://stijndv.com" />
@@ -21,6 +23,7 @@ const MyApp = ({ Component, pageProps }) => (
         rel="stylesheet"
         href="https://stijndv.com/fonts/Eudoxus-Sans.css"
       />
+
       {/* Additional CSS or JavaScript files can be added here */}
     </Head>
     <Layout>
