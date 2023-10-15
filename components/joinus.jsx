@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 
 const EmailForm = ({ onFormSubmit }) => {
   const [email, setEmail] = useState("");
+  const inputRef = useRef(); // Create a ref for the input field
 
   const handleEmailChange = ({ target: { value } }) => {
     setEmail(value);
@@ -36,6 +37,10 @@ const EmailForm = ({ onFormSubmit }) => {
     onFormSubmit(email);
   };
 
+  const handleClick = () => {
+    inputRef.current.focus(); // Set focus on the input field when the parent div is clicked
+  };
+
   return (
     <motion.form
       onSubmit={handleSubmit}
@@ -43,13 +48,16 @@ const EmailForm = ({ onFormSubmit }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
+      onClick={handleClick} // Add the onClick event to the parent div
     >
       <input
+        ref={inputRef} // Assign the ref to the input field
         type="email"
         className="py-4 px-6 sm:px-8 border rounded-lg mb-2 sm:mb-0 w-full sm:w-auto focus:outline-none resize-none cursor-pointer"
         placeholder="Enter your email"
         value={email}
         onChange={handleEmailChange}
+        onTouchStart={handleEmailChange}
       />
 
       <motion.button
@@ -57,6 +65,7 @@ const EmailForm = ({ onFormSubmit }) => {
         className="bg-red-500 hover:bg-red-700 text-white py-2 px-6 sm:px-8 rounded focus:outline-none transition duration-300 resize-none cursor-pointer"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
+        onTouchStart={handleSubmit}
       >
         Notify Me
       </motion.button>
