@@ -24,7 +24,7 @@ const Feedback = () => (
             DigitalGeeks
           </h4>
           <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-[16.68px] text-white">
-            Founder Sanganai
+            Founder of Sanganai
           </p>
         </div>
 
@@ -40,7 +40,7 @@ const Feedback = () => (
         className="relative flex-1 flex justify-center items-center"
       >
         <img
-          src="/planet-09.png"
+          src="/planet-09.jpg"
           alt="planet-09"
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
         />

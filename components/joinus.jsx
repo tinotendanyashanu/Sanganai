@@ -75,10 +75,12 @@ const JoinUs = () => {
     <div className="min-h-screen flex items-center justify-center bg-primary-black overflow-hidden z-10 text-white">
       <div className="isolate px-6 py-12 sm:py-24 lg:px-8 flex flex-col items-center w-full max-w-screen-lg">
         <h1 className="text-4xl lg:text-6xl xl:text-8xl font-bold text-center mb-6">
-          Join Our Newsletter
+          Join our waiting list!
         </h1>
         <p className="text-lg lg:text-xl xl:text-2xl text-gray-400 text-center mb-8">
-          Stay up-to-date with our latest news, events, and exclusive offers.
+          Stay ahead of the curve and be the first to know about the release of
+          Sangani. Leave your email to join our waiting list for exclusive
+          updates.
         </p>
 
         <EmailForm onFormSubmit={handleNotifyClick} />
