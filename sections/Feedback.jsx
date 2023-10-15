@@ -29,7 +29,7 @@ const Feedback = () => (
         </div>
 
         <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45.6px] leading-[39.6px] text-white">
-          “Sananganai: Where every ticket is a doorway to unforgettable moments.
+          “Sanganai: Where every ticket is a doorway to unforgettable moments.
           Join us on this journey to transform the way we experience events, one
           ticket at a time.”
         </p>

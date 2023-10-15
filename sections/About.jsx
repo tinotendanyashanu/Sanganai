@@ -22,10 +22,10 @@ const About = () => (
         variants={fadeIn("up", "tween", 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
       >
-        <span className="font-extrabold text-white">At Sananganai</span> , we
-        are redefining the way you experience events. Our platform is more than
-        just a ticketing solution; it's a gateway to unforgettable moments. With
-        Sananganai,{" "}
+        <span className="font-extrabold text-white">At Sanganai</span> , we are
+        redefining the way you experience events. Our platform is more than just
+        a ticketing solution; it's a gateway to unforgettable moments. With
+        Sanganai,{" "}
         <span className="font-extrabold text-white">
           event organizers can seamlessly manage their events
         </span>{" "}
@@ -33,7 +33,7 @@ const About = () => (
         is to <span className="font-extrabold text-white">connect</span> people
         through events, fostering a vibrant and engaged community.{" "}
         <span className="font-extrabold text-white"> Discover</span> the future
-        of event ticketing with Sananganai.
+        of event ticketing with Sanganai.
       </motion.p>
 
       <motion.img
