@@ -13,13 +13,16 @@ const EmailForm = ({ onFormSubmit }) => {
 
     try {
       // Make a POST request to your backend API endpoint
-      const response = await fetch("http://localhost:3001/subscribe", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
+      const response = await fetch(
+        "https://sanganai-091f66f33c16.herokuapp.com/subscribe",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email }),
+        }
+      );
 
       // Handle the response from the backend if needed
       if (response.ok) {
