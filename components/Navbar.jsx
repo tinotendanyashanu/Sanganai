@@ -17,24 +17,26 @@ const Navbar = () => {
       whileInView="show"
       className={`${styles.xPaddings} py-8 relative`}
     >
-      <div className="absolute w-[20%] inset-0 gradient-01" />
       <div
         className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
       >
         <img
           src="/sanganai.svg"
           alt="search"
-          className="w-[60px] h-[90px] object-contain"
+          className="w-[60px] h-[90px] object-contain left-20"
         />
+        <div className="absolute w-[20%] inset-9 gradient-01" />
         <h2 className="font-extrabold text-[34px] leading-[30.24px] text-white">
           Sanganai
         </h2>
-        <button
-          onClick={() => router.push("/join")}
-          className="bg-purple-700 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded-full transform transition-transform duration-300 ease-in-out hover:scale-110 focus:outline-none focus:ring focus:border-purple-900"
-        >
-          Get Started
-        </button>
+        <div className=" flex items-center justify-center gap-x-6 lg:justify-start">
+          <a
+            href="./join"
+            className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+          >
+            Get started
+          </a>
+        </div>
       </div>
     </motion.nav>
   );

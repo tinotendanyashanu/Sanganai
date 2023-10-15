@@ -1,9 +1,8 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const EmailForm = ({ onFormSubmit }) => {
   const [email, setEmail] = useState("");
-  const inputRef = useRef(); // Create a ref for the input field
 
   const handleEmailChange = ({ target: { value } }) => {
     setEmail(value);
@@ -37,38 +36,32 @@ const EmailForm = ({ onFormSubmit }) => {
     onFormSubmit(email);
   };
 
-  const handleClick = () => {
-    inputRef.current.focus(); // Set focus on the input field when the parent div is clicked
-  };
-
   return (
     <motion.form
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
       onSubmit={handleSubmit}
-      className="flex flex-col sm:flex-row items-center justify-center mb-6 mx-4 sm:mx-0 w-full sm:w-auto"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      onClick={handleClick} // Add the onClick event to the parent div
+      className="flex flex-col items-center space-y-4 p-6 rounded-lg shadow-md"
+      style={{ maxWidth: "300px" }}
     >
       <input
-        ref={inputRef} // Assign the ref to the input field
         type="email"
-        className="py-4 px-6 sm:px-8 border rounded-lg mb-2 sm:mb-0 w-full sm:w-auto focus:outline-none resize-none cursor-pointer"
-        placeholder="Enter your email"
+        name="email"
+        id="email"
+        autoComplete="email"
+        placeholder="Email Address"
         value={email}
         onChange={handleEmailChange}
-        onTouchStart={handleEmailChange}
+        className="w-full p-2 border rounded-sm focus:outline-none focus:ring focus:border-indigo-600 text-black"
       />
 
-      <motion.button
+      <button
         type="submit"
-        className="bg-red-500 hover:bg-red-700 text-white py-2 px-6 sm:px-8 rounded focus:outline-none transition duration-300 resize-none cursor-pointer"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        onTouchStart={handleSubmit}
+        className="w-full bg-red-500 text-white p-2 rounded-md hover:bg-red-600 focus:outline-none focus:ring focus:border-red-700"
       >
         Notify Me
-      </motion.button>
+      </button>
     </motion.form>
   );
 };
@@ -79,34 +72,20 @@ const JoinUs = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-primary-black overflow-hidden z-10">
-      <div className="p-8 rounded-lg shadow-lg text-center max-w-lg w-full">
-        <motion.h1
-          className="text-6xl lg:text-8xl font-bold text-white mb-6"
-          initial={{ y: -250 }}
-          animate={{ y: -10 }}
-          transition={{ delay: 0.2 }}
-        >
+    <div className="min-h-screen flex items-center justify-center bg-primary-black overflow-hidden z-10 text-white">
+      <div className="isolate px-6 py-12 sm:py-24 lg:px-8 flex flex-col items-center w-full max-w-screen-lg">
+        <h1 className="text-4xl lg:text-6xl xl:text-8xl font-bold text-center mb-6">
           Join Our Newsletter
-        </motion.h1>
-        <motion.p
-          className="text-xl lg:text-2xl text-gray-400 mb-8"
-          initial={{ y: -250 }}
-          animate={{ y: -10 }}
-          transition={{ delay: 0.4 }}
-        >
+        </h1>
+        <p className="text-lg lg:text-xl xl:text-2xl text-gray-400 text-center mb-8">
           Stay up-to-date with our latest news, events, and exclusive offers.
-        </motion.p>
+        </p>
 
         <EmailForm onFormSubmit={handleNotifyClick} />
-        <motion.p
-          className="text-lg lg:text-xl text-gray-500 text-sm"
-          initial={{ y: -250 }}
-          animate={{ y: -10 }}
-          transition={{ delay: 0.6 }}
-        >
+
+        <p className="text-base lg:text-lg xl:text-xl text-gray-500 text-center mt-4">
           We respect your privacy. Unsubscribe at any time.
-        </motion.p>
+        </p>
       </div>
     </div>
   );
