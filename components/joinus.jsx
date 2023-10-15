@@ -42,7 +42,7 @@ const EmailForm = ({ onFormSubmit }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       onSubmit={handleSubmit}
-      className="flex flex-col items-center space-y-4 p-6 rounded-lg shadow-md"
+      className="flex flex-col items-center space-y-4 p-6 rounded-lg shadow-md z-30"
       style={{ maxWidth: "300px" }}
     >
       <input
@@ -55,10 +55,10 @@ const EmailForm = ({ onFormSubmit }) => {
         onChange={handleEmailChange}
         className="w-full p-2 border rounded-sm focus:outline-none focus:ring focus:border-indigo-600 text-black"
       />
-      <div className="absolute w-[10%] inset-9 gradient-01" />
+      <div className="absolute w-[10%] inset-9 gradient-01 z-0" />
       <button
         type="submit"
-        className="w-full bg-red-500 text-white p-2 rounded-md hover:bg-red-600 focus:outline-none focus:ring focus:border-red-700"
+        className="w-full bg-red-500 text-white p-2 rounded-md hover:bg-red-600 focus:outline-none focus:ring focus:border-red-700 z-50"
       >
         Notify Me
       </button>
@@ -89,7 +89,6 @@ const JoinUs = () => {
           We respect your privacy. Unsubscribe at any time.
         </p>
       </div>
-      <div className="absolute w-[10%] inset-0 gradient-03" />
     </div>
   );
 };
