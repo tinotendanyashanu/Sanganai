@@ -94,18 +94,22 @@ export const insights = [
 export const socials = [
   {
     name: "twitter",
-    url: "/twitter.svg",
+    url: "https://twitter.com/",
+    icon: "/twitter.svg",
   },
   {
     name: "linkedin",
-    url: "/linkedin.svg",
+    url: "https://www.linkedin.com/in/",
+    icon: "/linkedin.svg",
   },
   {
     name: "instagram",
-    url: "/instagram.svg",
+    url: "https://www.instagram.com/",
+    icon: "/instagram.svg",
   },
   {
     name: "facebook",
-    url: "/facebook.svg",
+    url: "https://www.facebook.com/sanganaionline",
+    icon: "/facebook.svg",
   },
 ];
