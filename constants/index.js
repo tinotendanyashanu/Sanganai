@@ -69,21 +69,21 @@ export const newFeatures = [
 
 export const insights = [
   {
-    imgUrl: "/planet-06.png",
+    imgUrl: "/Future.jpg",
     title:
       "The Future of Events: Navigating Hybrid Experiences in a Digital World",
     subtitle:
       " Explore the evolution of events in the digital age. Learn how event organizers are successfully blending physical and virtual experiences to create engaging hybrid events. Discover the technologies shaping the future of event planning and how attendees can make the most of these dynamic gatherings.",
   },
   {
-    imgUrl: "/analytics.jpg",
+    imgUrl: "/DataDriven.jpg",
     title:
       "Data-Driven Events: How Analytics is Revolutionizing Event Planning",
     subtitle:
       "Uncover the power of data in the events industry. Delve into the ways event organizers are leveraging analytics to understand attendee behavior, optimize event logistics, and enhance overall attendee satisfaction. Learn practical strategies for collecting and interpreting event data, leading to more informed decision-making.",
   },
   {
-    imgUrl: "/R.png",
+    imgUrl: "/Art.jpg",
     title:
       "The Art of Event Promotion: Strategies for Creating Buzz and Boosting Attendance",
     subtitle:

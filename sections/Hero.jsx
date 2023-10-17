@@ -7,6 +7,7 @@ import { slideIn, staggerContainer, textVariant } from "../utils/motion";
 import JoinButton from "../components/Button";
 
 const images = [
+  // "/Sangani.png",
   "/cover3.jpg",
   "/cover1.jpg",
   "/Entertainment.jpg",
