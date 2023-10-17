@@ -14,7 +14,7 @@ const JoinButton = () => {
         onClick={handleButtonClick}
         className="bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-semibold py-4 px-6 rounded-full shadow-lg transition duration-300 ease-in-out"
       >
-        Join Waitlist
+        Join Whitelist
       </button>
     </div>
   );
