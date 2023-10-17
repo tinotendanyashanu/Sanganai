@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import styles from "../styles";
 import { navVariants } from "../utils/motion";
 import { useRouter } from "next/router";
+import JoinButton from "./Button";
 
 const Navbar = () => {
   // Initialize the router object
@@ -29,15 +30,15 @@ const Navbar = () => {
         {/* <h2 className="font-extrabold text-[34px] leading-[30.24px] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-orange-500 to-yellow-500 via-pink-500">
           Sanganai
         </h2> */}
-
-        <div className=" flex items-center justify-center gap-x-6 lg:justify-start">
+        <JoinButton />
+        {/* <div className=" flex items-center justify-center gap-x-6 lg:justify-start">
           <a
             href="./join"
             className="rounded-md text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-orange-500 to-yellow-500 via-pink-500 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >
             Get started
           </a>
-        </div>
+        </div> */}
       </div>
     </motion.nav>
   );
