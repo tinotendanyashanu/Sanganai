@@ -1,4 +1,5 @@
 import { Footer, Navbar } from "../components";
+
 import {
   About,
   Explore,
@@ -14,6 +15,7 @@ const Home = () => (
   <div className="bg-primary-black overflow-hidden">
     <Navbar />
     <Hero />
+
     <div className="relative">
       <About />
       <div className="gradient-03 z-0" />
